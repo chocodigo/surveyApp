@@ -1,20 +1,35 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<!--    <a id="kakao-login-btn">-->
+<!--      <img src="http://mud-kage.kakao.com/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg" width="300"/>-->
+<!--    </a>-->
+  </div>
+
+
+  <div class="login_div" style="text-align: center; margin-top: 50px;">
+    <img src="/assets/logo_image.png" height="100px" style="margin-top: 50px;">
+    <h3 style="margin-bottom: 50px">태양법률사무소 공용부 점검</h3>
+
+    <ion-card class="login_box">
+      <ion-card-content>
+        <ion-item>
+          <ion-label>아파트 선택</ion-label>
+          <ion-select placeholder="아파트를 선택하세요" [(ngModel)] = "loginAptName" ngDefaultControl>
+            <ion-select-option *ngFor="let apt of data" [value]="apt.aptt_name">{{ apt.aptt_name }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)] = "loginPk1" ngDefaultControl></ion-input>
+          <ion-label style="color: #A9A9A9" >동</ion-label>
+          <ion-input [(ngModel)] = "loginPk2" ngDefaultControl></ion-input>
+          <ion-label style="color: #A9A9A9" >호</ion-label>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button class="next_btn" expand="block" style="margin: 10px ;" (click)="click_login_btn()">다 음</ion-button>
   </div>
 </ion-content>

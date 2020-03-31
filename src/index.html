@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:gap="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="utf-8" />
@@ -16,6 +16,10 @@
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+  <script src="assets/js/kakao.min.js"></script>
 </head>
 
 <body>
