@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>공용부점검</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list [(ngModel)]="data" ngDefaultControl>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>test</ion-item>
+    <ion-item>end</ion-item>
+
+  </ion-list>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+            loadingSpinner="bubbles"
+            loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
