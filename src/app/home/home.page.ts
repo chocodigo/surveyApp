@@ -25,6 +25,7 @@ export class HomePage {
   }
 
   async click_login_btn() {
+    console.log('선택한 아파트 : ' + this.loginAptName);
     const user = {
       loginPk1: this.loginPk1,
       loginPk2: this.loginPk2,

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.taeyang.surveycheck" version="0.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://java.sun.com/xml/ns/j2ee" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>공용부점검</name>
+<widget id="com.taeyang.surveycheck" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://java.sun.com/xml/ns/j2ee" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>아파트 하자점검</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -95,7 +95,7 @@
         <splash height="2436" src="resources/ios/splash/Default-2436h.png" width="1125" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
         <config-file parent="NSCameraUsageDescription" platform="ios" target="*-Info.plist">
-            <string>You can upload your offer/article picture using your camera</string>
+            <string>카메라를 사용하여 사진을 업로드 할 수 있습니다.</string>
         </config-file>
         <icon height="216" src="resources/ios/icon/icon-108@2x.png" width="216" />
         <splash height="2688" src="resources/ios/splash/Default-2688h~iphone.png" width="1242" />

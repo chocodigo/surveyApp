@@ -2,18 +2,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id="container">
-<!--    <a id="kakao-login-btn">-->
-<!--      <img src="http://mud-kage.kakao.com/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg" width="300"/>-->
-<!--    </a>-->
-  </div>
+
 
 
   <div class="login_div" style="text-align: center; margin-top: 50px;">
-    <img src="/assets/logo_image.png" height="100px" style="margin-top: 50px;">
-    <h3 style="margin-bottom: 50px">태양법률사무소 공용부 점검</h3>
+    <img src="/assets/home.png" height="100px" style="margin-top: 50px;">
+    <h1 style="margin-bottom: 10px">아파트 하자 점검</h1>
+    <h5 style="margin-bottom: 70px">신규분양아파트 전용부 및 공용부 모바일 하자 점검</h5>
 
-    <ion-card class="login_box">
+    <ion-card class="login_box" style="margin-left: 50px; margin-right: 50px">
       <ion-card-content>
         <ion-item>
           <ion-label>아파트 선택</ion-label>
@@ -30,6 +27,10 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-button class="next_btn" expand="block" style="margin: 10px ;" (click)="click_login_btn()">다 음</ion-button>
+    <ion-button class="next_btn" expand="block" style="margin-top: 10px ; margin-left: 50px; margin-right: 50px" (click)="click_login_btn()">다 음</ion-button>
+  </div>
+  <div class="footer">
+    <img src="/assets/logo.png" width="300px">
+
   </div>
 </ion-content>

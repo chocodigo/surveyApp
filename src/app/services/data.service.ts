@@ -13,10 +13,12 @@ export class DataService {
   }
 
   // tslint:disable-next-line:variable-name
-  insertBoard(loginAptName, loginPk1, loginPk2, titl_name, cont_ents, photo) {
+  insertBoard(loginAptName, loginPk1, loginPk2, cont_ents, room_idxx, photo) {
     this.http.setDataSerializer('utf8');
     const headers = {'Content-Type': 'application/x-www-form-urlencoded'};
-    const body = 'apt=' + loginAptName + '&pk1=' + loginPk1 + '&pk2=' + loginPk2 + '&titlname=' + titl_name + '&contents=' + cont_ents + '&photo=' + photo;
+    // tslint:disable-next-line:max-line-length
+    const body = 'apt=' + loginAptName + '&pk1=' + loginPk1 + '&pk2=' + loginPk2 + '&contents=' + cont_ents + '&photo=' + photo + '&cateidxx=' + room_idxx;
+    console.log('body : ' + body);
     return this.http.post(this.url, body, headers).then(data => {
       console.log('성공');
     }).catch(error => {

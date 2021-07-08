@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'NanumSquare';
+  src: url(../../assets/font/NanumSquare_acR.ttf) format('truetype');
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  font-family: NanumSquare;
+  background-color: #EEEFEF;
+  padding-top: 10px;
+}
+
+.input-box {
+  background-color:white;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px gray inset;
+}
+
+.photo_btn {
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 40px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.footer{
+
+  margin-top: 100px;
+
+  left: 0;
+  bottom: 0;
+  width:100%;
+  padding: 15px 0;
+
+  text-align: center;
+}

@@ -1,7 +1,26 @@
+@font-face {
+  font-family: 'NanumSquare';
+  src: url(../../assets/font/NanumSquare_acR.ttf) format('truetype');
+}
+
+.login_div {
+  font-family: NanumSquare;
+}
 
 #wrap{
   display:none;border:1px solid;width:500px;height:300px;margin:5px 0;position:fixed; z-index: 10;
 }
 #wrap img{
   cursor:pointer;position:absolute;right:0px;top:-1px;z-index:20;
+}
+
+.footer{
+
+  margin-top: 100px;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  padding: 15px 0;
+
+  text-align: center;
 }

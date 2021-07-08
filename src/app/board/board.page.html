@@ -1,39 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      <div style="text-align: center">
-        <ion-label>{{aptName}}</ion-label>
-        <br>
-        <ion-label>{{pk1}}동 {{pk2}}호</ion-label>
-      </div>
+    <ion-title style="background-color: #1779BD; text-align: center; color: white; font-size: 25px">
+      <img src="assets/reverse.png" width="40px" style="margin: 10px; vertical-align:middle; ">하자등록
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div>
+  <div class="wrap">
+    <div style="text-align: center; margin-top: 30px">
+      <ion-label>{{aptName}}</ion-label>
+      <br>
+      <ion-label>{{pk1}}동 {{pk2}}호</ion-label>
+    </div>
+    <hr color="gray" style="margin-left: 10px; margin-right: 10px; border: 10px;">
+    <div style="margin-right: 10px; margin-left: 10px;">
 
-    <div>
-      <ion-card>
-        <ion-card-content>
-          <ion-item>
-            <ion-label>하자부분</ion-label>
-            <ion-input [(ngModel)]="titl_name"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-label>하자내용</ion-label>
-            <ion-textarea rows="6" [(ngModel)]="cont_ents"></ion-textarea>
-          </ion-item>
-          <ion-item>
-            <img src="/assets/plus.png" (click)="selectImage()" style="width: 50px; padding: 10px">
-            <img src="{{photos[0]}}" *ngIf="isValid" style="width: 300px; border-radius: 5px"/>
-            <a (click)="btnDeletePicture()" *ngIf="isValid">사진삭제</a>
-          </ion-item>
-        </ion-card-content>
-      </ion-card>
+      <ion-label>하자위치</ion-label>
+      <ion-select class="input-box" placeholder="선택" [(ngModel)] = "cateName" ngDefaultControl>
+        <ion-select-option *ngFor="let cate_name of roomData" value="{{cate_name.cate_idxx}}">{{ cate_name.cate_name }}</ion-select-option>
+      </ion-select>
+
+      <ion-label>하자내용</ion-label>
+      <ion-textarea class="input-box" rows="6" [(ngModel)]="cont_ents"></ion-textarea>
+
+
+      <div class="photo_btn" (click)="selectImage()">
+
+        <img src="/assets/plus.png"  style="width: 50px; padding: 10px">
+        <img src="{{photos[0]}}" *ngIf="isValid" style="width: 300px; border-radius: 5px"/>
+      </div>
       <div style="text-align: right; margin-right: 10px;">
-        <ion-button (click)="btnSendBoard()">등록</ion-button>
+        <ion-button id="btnSend" (click)="btnSendBoard()">등록</ion-button>
       </div>
     </div>
+  </div>
+  <div class="footer">
+    <img src="/assets/logo.png" width="300px">
+
   </div>
 </ion-content>
